@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#kb layout
+setxkbmap us -variant colemak
+
+#display layout
+xrandr	--output eDP-1-1 --primary --mode 1920x1080 --pos 0x1024 --rotate normal
+xrandr	--output DP-5 --mode 1280x1024 --pos 320x0 --rotate normal
+xrandr	--output DP-0 --off
+xrandr	--output DP-1 --off
+xrandr	--output DP-2 --off
+xrandr	--output DP-3 --off
+xrandr	--output DP-4 --off
