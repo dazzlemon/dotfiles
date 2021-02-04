@@ -43,5 +43,5 @@ let g:ale_linters = {
 \}
 let g:ale_cpp_clang_options="-std=c++20 -Wall -Wextra -Werror"
 let g:ale_cpp_clangtidy_options=g:ale_cpp_clang_options
-" let g:ale_cpp_clangtidy_checks=['*', '-fuchsia-default-arguments', '-google-runtime-int', '-llvm-header-guard']
+let g:ale_cpp_clangtidy_checks=['modernize*', 'bugprone*', 'cert*', 'concurrency-mt-unsafe', 'cppcoreguidelines*', 'google*', 'llvm-*', 'misc*', 'perfomance*', 'readability*', ]
 let g:ale_cpp_gcc_options=g:ale_cpp_clang_options
