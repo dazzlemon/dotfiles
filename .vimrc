@@ -22,6 +22,7 @@ call plug#end()
  
 " VIM-PLUG END
 
+" COLORSCHEME
 " ST TrueColor
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
@@ -30,4 +31,17 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set nu
 set termguicolors
 syntax on
-colorscheme monokai-phoenix"moonfly
+colorscheme monokai-phoenix " moonfly
+" COLORSCHEME END
+
+" clangcheck excluded because doesn't see headers
+" cc excluded because doesn't know std::ranges
+" clazy excluded because doesn't see headers
+" clangd excluded because doesn't know std::ranges
+let g:ale_linters = {
+      \ 'cpp': ['ccls', 'clangtidy', 'cppcheck', 'cpplint', 'cquery', 'flawfinder'],
+\}
+let g:ale_cpp_clang_options="-std=c++20 -Wall -Wextra -Werror"
+let g:ale_cpp_clangtidy_options=g:ale_cpp_clang_options
+" let g:ale_cpp_clangtidy_checks=['*', '-fuchsia-default-arguments', '-google-runtime-int', '-llvm-header-guard']
+let g:ale_cpp_gcc_options=g:ale_cpp_clang_options
