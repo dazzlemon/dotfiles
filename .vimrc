@@ -47,6 +47,3 @@ let g:ale_cpp_clangtidy_options=g:ale_cpp_clang_options
 let g:ale_cpp_clangtidy_checks=['modernize*', 'bugprone*', 'cert*', 'concurrency-mt-unsafe', 'cppcoreguidelines*', 'google*', 'llvm-*', 'misc*', 'perfomance*', 'readability*', ]
 let g:ale_cpp_gcc_options=g:ale_cpp_clang_options
 " ALE SETTINGS END
-
-" classic
-set tabstop=4
