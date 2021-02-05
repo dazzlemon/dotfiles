@@ -41,7 +41,7 @@ colorscheme monokai-phoenix " moonfly
 let g:ale_linters = {
       \ 'cpp': ['ccls', 'clangtidy', 'cppcheck', 'cpplint', 'cquery', 'flawfinder'],
 \}
-let g:ale_cpp_clang_options="-std=c++20 -Wall -Wextra -Werror"
+let g:ale_cpp_clang_options="-Iinclude -std=c++20 -Wall -Wextra -Werror"
 let g:ale_cpp_clangtidy_options=g:ale_cpp_clang_options
 let g:ale_cpp_clangtidy_checks=['modernize*', 'bugprone*', 'cert*', 'concurrency-mt-unsafe', 'cppcoreguidelines*', 'google*', 'llvm-*', 'misc*', 'perfomance*', 'readability*', ]
 let g:ale_cpp_gcc_options=g:ale_cpp_clang_options
