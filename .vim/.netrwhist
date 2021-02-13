@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/dazzlemon/hdd_dazzlemon/github/diit_121-ipz_y2_asd/2/src/main/java'
 let g:netrw_dirhist_2='/home/dazzlemon/hdd_dazzlemon/github/diit_121-ipz_y2_oop/09/src'
 let g:netrw_dirhist_1='/home/dazzlemon/hdd_dazzlemon/github/diit_121-ipz_y2_asd/1/src/include'

@@ -1,13 +1,4 @@
-" comparison
-syn match Normal '\!=' conceal cchar=≠
-syn match Normal '>=' conceal cchar=≥
-syn match Normal '<=' conceal cchar=≤
-"syn match Normal '==' conceal cchar=≝
-
-" etc
 syn keyword cRepeat for conceal cchar=∀
-"syn match Normal '=' conceal cchar=ᗕ
-syn match Normal '->' conceal cchar=ᗒ
 
 " bool
 syn keyword cppBoolean false conceal cchar=𝐅
