@@ -12,6 +12,7 @@ endif
 " PLUGINS
 call plug#begin('~/.vim/plugged')
 
+Plug 'jonathanfilip/vim-lucius'
 Plug 'chrisbra/colorizer'
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'reewr/vim-monokai-phoenix'
@@ -33,6 +34,8 @@ set nu
 set termguicolors
 syntax on
 colorscheme monokai-phoenix " moonfly
+"colorscheme lucius
+"LuciusBlackLowContrast
 " COLORSCHEME END
 
 " ALE SETTINGS
