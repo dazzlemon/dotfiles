@@ -12,6 +12,7 @@ endif
 " PLUGINS
 call plug#begin('~/.vim/plugged')
 
+Plug 'chrisbra/colorizer'
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'reewr/vim-monokai-phoenix'
 Plug 'sheerun/vim-polyglot'
@@ -47,3 +48,4 @@ let g:ale_cpp_clangtidy_options=g:ale_cpp_clang_options
 let g:ale_cpp_clangtidy_checks=['modernize*', 'bugprone*', 'cert*', 'concurrency-mt-unsafe', 'cppcoreguidelines*', 'google*', 'llvm-*', 'misc*', 'perfomance*', 'readability*', ]
 let g:ale_cpp_gcc_options=g:ale_cpp_clang_options
 " ALE SETTINGS END
+let g:colorizer_auto_color=1
