@@ -407,7 +407,9 @@ good-names=i,j,k,t,
            xs,ys,zs,
            a,b,c,
            f,
-           w, h
+           w, h,
+           p, p_, p1, p2,
+           l
 
 # Good variable names regexes, separated by a comma. If names match any regex,
 # they will always be accepted
