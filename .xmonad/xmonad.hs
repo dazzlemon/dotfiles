@@ -1,11 +1,16 @@
 import XMonad
-import XMonad.Hooks.Script
-import XMonad.Hooks.SetWMName
+import XMonad.Hooks.Rescreen
 
-main = xmonad def {
-	modMask  = mod4Mask,
-	terminal = "st",
-	startupHook = do
-		execScriptHook "startup"
-		setWMName "LG3D"
-}
+myRandrChangeHook :: X ()
+myRandrChangeHook = spawn "xrandr --auto"
+
+rescreenCfg = def 
+	{ randrChangeHook = myRandrChangeHook
+	}
+
+main = xmonad
+     $ rescreenHook rescreenCfg 
+		 $ def
+      	{ terminal	= "st"
+      	, modMask	= mod4Mask
+      	}
